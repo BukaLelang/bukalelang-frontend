@@ -1,9 +1,14 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { Scene, Router } from 'react-native-router-flux'
 
-// Scene & Navigation Controller
-const Wrapper = () => ((
-  <Text>haloooooo</Text>
-))
+import Home from './Home'
+
+const Wrapper = () => (
+  <Router>
+    <Scene key='root'>
+      <Scene key='Home' component={Home} initial={true} hideNavBar />
+    </Scene>
+  </Router>
+)
 
 export default Wrapper
