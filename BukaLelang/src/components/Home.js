@@ -16,7 +16,7 @@ class Home extends Component {
             </Button>
           </Left>
           <Body>
-            <Title>Header</Title>
+            <Title style={Styles.Logo}>BukaLelang</Title>
           </Body>
           <Right />
         </Header>
