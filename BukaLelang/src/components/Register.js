@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Image } from 'react-native'
 import { Container, Content, Form, Input, Button, Text, InputGroup, H1, Footer, FooterTab } from 'native-base'
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux'
@@ -26,7 +27,7 @@ class Register extends Component {
               <Input placeholder='Password' type='password' />
             </InputGroup>
             <Button block style={Styles.LoginButton}>
-              <Text>Register</Text>
+              <Text>Daftar</Text>
             </Button>
             <Text style={Styles.OrStyle}>OR</Text>
             <Button block style={Styles.FacebookButton}>

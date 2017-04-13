@@ -2,7 +2,7 @@ import * as ActionTypes from '../actions/constant.js'
 
 // INITIAL STATE FOR REDUCER
 const init = {
-  asyncKey: null
+  asyncKey: true
 }
 
 const loginReducers = (state = init, action) => {
