@@ -5,7 +5,7 @@ const init = {
   name: 'jacky'
 }
 
-const dataReducer = (state = init, action) => {
+const dataReducers = (state = init, action) => {
   switch (action.type) {
     case ActionTypes.GET_DATA: {
       return state
@@ -14,4 +14,4 @@ const dataReducer = (state = init, action) => {
   }
 }
 
-export default dataReducer
+export default dataReducers

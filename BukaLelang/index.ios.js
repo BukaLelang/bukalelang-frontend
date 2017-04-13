@@ -8,9 +8,7 @@ import store from './src/store'
 export default class BukaLelang extends Component {
   render () {
     return (
-      <Provider store={store}>
-        <App />
-      </Provider>
+      <App />
     )
   }
 }
