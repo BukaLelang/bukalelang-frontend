@@ -19,7 +19,10 @@ class Register extends Component {
       <Container>
         <Content style={Styles.Container}>
           <Form>
-            <H1 style={Styles.Logo}>BUKALELANG</H1>
+            <H1 style={Styles.Logo}>BukaLelang</H1>
+            <InputGroup regular>
+              <Input placeholder='Nama Lengkap' />
+            </InputGroup>
             <InputGroup regular>
               <Input placeholder='Username' />
             </InputGroup>

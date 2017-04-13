@@ -2,8 +2,8 @@ import React from 'react'
 
 import Wrapper from './components/Wrapper'
 
-const App = () => ((
+const App = () => (
   <Wrapper />
-))
+)
 
 export default App
