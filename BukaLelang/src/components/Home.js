@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
-import { Text } from 'react-native'
-import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon } from 'native-base'
+import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base'
+import { Actions } from 'react-native-router-flux'
+
+import Styles from '../assets/styles/Home.styles'
 
 class Home extends Component {
-  render() {
+  render () {
     return (
       <Container>
-        <Header>
+        <Header style={Styles.Header}>
           <Left>
             <Button transparent>
-            <Icon name='menu' />
+            <Icon name='menu' onPress={() => Actions.refresh({key: 'MenuDrawer', open: value => !value})} />
             </Button>
           </Left>
           <Body>
@@ -19,6 +21,10 @@ class Home extends Component {
         </Header>
         <Content>
           <Text>Haloo mas</Text>
+          <Button onPress={Actions.Login}><Text>Login</Text></Button>
+          <Button onPress={Actions.Register}><Text>Register</Text></Button>
+          <Button onPress={Actions.CardImage}><Text>Card Image</Text></Button>
+          <Button onPress={Actions.TabsBoard}><Text>TabsBoard</Text></Button>
         </Content>
         <Footer>
           <FooterTab>
