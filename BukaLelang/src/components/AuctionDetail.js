@@ -17,25 +17,25 @@ class AuctionDetail extends Component {
   render () {
     return (
       <Container>
-      <Header style={Styles.Header}>
-        <Left>
-          <Button transparent style={Styles.BurgerMenu}>
-          <Icon name='menu' onPress={() => Actions.refresh({key: 'MenuDrawer', open: value => !value})} />
-          </Button>
-        </Left>
-        <Body>
-          <Title style={Styles.Logo}>BukaLelang</Title>
-        </Body>
-        <Body>
-          <TouchableOpacity style={Styles.TouchSearch} onPress={Actions.Search }>
-            <Icon name='ios-search' style={Styles.Search}/>
-          </TouchableOpacity>
-        </Body>
+        <Header style={Styles.Header}>
+          <Left>
+            <Button transparent style={Styles.BurgerMenu}>
+            <Icon name='arrow-back' onPress={Actions.Home} />
+            </Button>
+          </Left>
+          <Body>
+            <Title style={Styles.Logo}>BukaLelang</Title>
+          </Body>
+          <Body>
+            <TouchableOpacity style={Styles.TouchSearch} onPress={Actions.Search }>
+              <Icon name='ios-search' style={Styles.Search}/>
+            </TouchableOpacity>
+          </Body>
+        </Header>
         <Image source={{ uri: 'http://4.bp.blogspot.com/-IgOZa3Gm5Qc/VecNGI-7NJI/AAAAAAAAAk0/0bg1FVdAfes/s1600/Foto-Isyana-Sarasvati-01.jpg' }} style={{width: '100%', height: '71%' }}>
         </Image>
         <Footer style={{ height: 40}}>
           <FooterTab style={{ backgroundColor: '#E29A09' }}>
-
           </FooterTab>
         </Footer>
         <Footer>

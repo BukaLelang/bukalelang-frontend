@@ -1,5 +1,5 @@
 import React from 'react'
-import { Scene, Router } from 'react-native-router-flux'
+import { Scene, Router, Drawer } from 'react-native-router-flux'
 
 import Home from './Home'
 import Login from './Login'
@@ -11,9 +11,9 @@ import AuctionDetail from './AuctionDetail'
 const Wrapper = () => (
   <Router>
     <Scene key='root'>
-      <Scene key="MenuDrawer" component={MenuDrawer} open={false}>
+      <Drawer key="MenuDrawer" component={MenuDrawer} open={false}>
         <Scene key='Home' component={Home} hideNavBar />
-      </Scene>
+      </Drawer>
       <Scene key='Login' component={Login} hideNavBar />
       <Scene key='Register' component={Register} hideNavBar />
       <Scene key='Search' component={Search} hideNavBar />
