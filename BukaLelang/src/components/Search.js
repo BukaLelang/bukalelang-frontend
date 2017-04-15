@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Container, Header, InputGroup, Input, Icon, Button, Text } from 'native-base'
+import { Container, Content, Header, InputGroup, Input, Icon, Button, Text } from 'native-base'
 
 import Styles from '../assets/styles/Search.styles'
 
-export default class SearchBarNav extends Component {
+class SearchBarNav extends Component {
   render() {
     return (
       <Container>
@@ -16,7 +16,14 @@ export default class SearchBarNav extends Component {
             <Text>Search</Text>
           </Button>
         </Header>
+        <Content style={Styles.Content}>
+          <Button style={Styles.BackButton}>
+            <Text>Back</Text>
+          </Button>
+        </Content>
       </Container>
     )
   }
 }
+
+export default SearchBarNav

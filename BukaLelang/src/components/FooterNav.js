@@ -10,14 +10,14 @@ const FooterNav = () => (
       <Button>
         <Icon name="apps" style={Styles.FooterText} />
       </Button>
-      <Button>
-        <Icon name="camera"  style={Styles.FooterText} />
+      <Button onPress={Actions.AuctionDetail}>
+        <Text style={Styles.FooterText}>Detail</Text>
       </Button>
       <Button onPress={Actions.Login}>
-        <Text style={Styles.FooterText} >Login</Text>
+        <Text style={Styles.FooterText}>Login</Text>
       </Button>
       <Button onPress={Actions.Register}>
-        <Text style={Styles.FooterText} >Register</Text>
+        <Text style={Styles.FooterText}>Register</Text>
       </Button>
     </FooterTab>
   </Footer>
