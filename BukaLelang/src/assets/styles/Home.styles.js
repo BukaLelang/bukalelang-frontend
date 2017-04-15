@@ -1,6 +1,7 @@
 export default {
   Header: {
-    backgroundColor:'#a30f42'
+    backgroundColor:'#a30f42',
+    flexDirection: 'row'
   },
   Footer: {
     backgroundColor: '#a30f42'
@@ -29,5 +30,14 @@ export default {
     fontFamily: 'Iowan Old Style',
     marginTop: 20,
     marginBottom: 20
+  },
+  Search: {
+    color: '#ffffff',
+  },
+  BurgerMenu: {
+    marginRight: 20
+  },
+  TouchSearch: {
+    padding: 10
   }
 }

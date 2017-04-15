@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
-import { Container, Header, InputGroup, Input, Icon, Button } from 'native-base'
+import { Container, Header, InputGroup, Input, Icon, Button, Text } from 'native-base'
 
-export default class Search extends Component {
+import Styles from '../assets/styles/Search.styles'
+
+export default class SearchBarNav extends Component {
   render() {
-  return (
+    return (
       <Container>
-        <Header searchBar block>
-          <InputGroup>
-            <Icon name='ios-search' />
-            <Input placeholder='Search' />
-            <Icon name='ios-people' />
+        <Header searchBar rounded style={Styles.Header}>
+          <InputGroup regular style={Styles.InputGroupBackground}>
+            <Icon name="ios-search" style={Styles.IconColor} />
+            <Input placeholder="Search" />
           </InputGroup>
-          <Button transparent>
+            <Button transparent>
             <Text>Search</Text>
           </Button>
         </Header>

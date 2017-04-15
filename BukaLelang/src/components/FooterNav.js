@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Footer, FooterTab, Icon, Button, Text } from 'native-base'
 
+import { Actions } from 'react-native-router-flux'
 import Styles from '../assets/styles/Home.styles'
 
 const FooterNav = () => (
