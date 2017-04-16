@@ -14,6 +14,10 @@ class AuctionDetail extends Component {
     }
   }
 
+  componentWillMount () {
+    Actions.currentRouter = null
+  }
+
   render () {
     return (
       <Container>

@@ -39,5 +39,8 @@ export default {
   },
   TouchSearch: {
     padding: 10
+  },
+  BurgerMenu: {
+    marginRight: 20
   }
 }
